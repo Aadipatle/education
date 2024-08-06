@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Aadipatle.github.io/education",
   "name": "education-academia",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.1.1",
     "google-maps-react": "^2.0.6",
     "material-icons": "^1.10.11",
     "react": "^18.1.0",
@@ -24,6 +26,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,5 +50,4 @@
       "last 1 safari version"
     ]
   }
-
 }
